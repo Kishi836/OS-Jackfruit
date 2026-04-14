@@ -114,27 +114,32 @@ sudo rmmod monitor
 
 ### Screenshot 1 — Multi-container supervision
 Two containers (alpha and beta) launched and running under one supervisor process.
+<img width="1920" height="1003" alt="triple_terminal" src="https://github.com/user-attachments/assets/8b2d7a0c-a9cb-41c7-8b2f-9d3efa669973" />
 
 ### Screenshot 2 — Metadata tracking
 Output of `engine ps` showing container IDs, host PIDs, and states.
+<img width="1920" height="1003" alt="2nd_pic" src="https://github.com/user-attachments/assets/70cddec8-6343-4b65-88ce-4e814a5b15e0" />
 
 ### Screenshot 3 — Bounded-buffer logging
 Log file contents captured through the producer-consumer logging pipeline, showing cpu_hog output routed from container stdout through the bounded buffer to persistent log files.
+<img width="1920" height="1003" alt="another_one" src="https://github.com/user-attachments/assets/906ef4c9-1eac-42fe-b85b-6ba60691a5df" />
 
 ### Screenshot 4 — CLI and IPC
 `engine stop` and `engine ps` commands issued over the UNIX domain socket control channel, supervisor responding with updated container state.
+<img width="1920" height="1003" alt="Experiment_2" src="https://github.com/user-attachments/assets/1a7915b3-e318-4258-8200-21f912ec46ea" />
 
-### Screenshot 5 — Soft-limit warning
+### Screenshot 5 — Soft-limit warning & Hard-limit enforcement
 `dmesg` output showing `SOFT LIMIT` warning event when container RSS exceeded the soft limit threshold.
-
-### Screenshot 6 — Hard-limit enforcement
 `dmesg` output showing `HARD LIMIT` kill event when container RSS exceeded the hard limit, container terminated by the kernel module.
+<img width="1920" height="1003" alt="Memory_limits" src="https://github.com/user-attachments/assets/736ce558-79c2-41dc-bb7a-cd8f048709f3" />
 
-### Screenshot 7 — Scheduling experiment
+### Screenshot 6 — Scheduling experiment
 Log output from two containers running with different nice values (-5 vs 10), showing higher accumulator values for the high-priority container in the same time window.
+<img width="1105" height="975" alt="Exp_2_terminal3" src="https://github.com/user-attachments/assets/0a72c88e-7504-4caf-999a-ad2b8a057e73" />
 
-### Screenshot 8 — Clean teardown
+### Screenshot 7 — Clean teardown
 All containers stopped, no stray processes in `ps aux`, kernel module unloaded cleanly with `Module unloaded.` in dmesg.
+<img width="918" height="513" alt="Final_terminal2_teardown_ss" src="https://github.com/user-attachments/assets/fc311bcb-4cc8-4d0d-9950-1b5120af7834" />
 
 ---
 
