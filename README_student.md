@@ -245,7 +245,7 @@ These results confirm that Linux scheduling is work-conserving — idle CPU time
 
 | Container | Nice Value | Final Accumulator | Duration |
 |---|---|---|---|
-| alpha | -5 (high priority) | 1462114265827574355 | 10s |
+| alpha | -5 (high priority) | 9149969968400260415 | 10s |
 | beta | +10 (low priority) | 1307381733407785632 | 10s |
 
 **Analysis:** Alpha computed approximately 11.8% more work than beta in the same time window. The CFS scheduler assigned alpha a larger CPU share due to its lower nice value. The difference would be more pronounced on a single-core system — on multi-core, both containers can run simultaneously on different cores, reducing the observable priority effect.
