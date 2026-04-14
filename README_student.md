@@ -116,12 +116,13 @@ sudo rmmod monitor
 Two containers (alpha and beta) launched and running under one supervisor process.
 <img width="1920" height="1003" alt="triple_terminal" src="https://github.com/user-attachments/assets/8b2d7a0c-a9cb-41c7-8b2f-9d3efa669973" />
 
-### Screenshot 2 - Scheduler Experiment 1 — CPU priority comparison
-<img width="1920" height="1003" alt="2nd_pic" src="https://github.com/user-attachments/assets/70cddec8-6343-4b65-88ce-4e814a5b15e0" />
+### Screenshot 2 — Metadata tracking
+Output of engine ps showing container IDs, host PIDs, and states.
+<img width="742" height="967" alt="screenshot_2" src="https://github.com/user-attachments/assets/c72b6434-a47f-4bf8-bfa1-af5dc1d15cac" />
 
 ### Screenshot 3 — Bounded-buffer logging
 Log file contents captured through the producer-consumer logging pipeline, showing cpu_hog output routed from container stdout through the bounded buffer to persistent log files.
-<img width="1920" height="1003" alt="another_one" src="https://github.com/user-attachments/assets/906ef4c9-1eac-42fe-b85b-6ba60691a5df" />
+<img width="943" height="366" alt="screenshot_3" src="https://github.com/user-attachments/assets/c0e9c6ee-fe97-4e5d-8e9d-54ea8744d880" />
 
 ### Screenshot 4 — CLI and IPC
 `engine stop` and `engine ps` commands issued over the UNIX domain socket control channel, supervisor responding with updated container state.
