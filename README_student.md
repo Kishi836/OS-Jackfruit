@@ -116,8 +116,7 @@ sudo rmmod monitor
 Two containers (alpha and beta) launched and running under one supervisor process.
 <img width="1920" height="1003" alt="triple_terminal" src="https://github.com/user-attachments/assets/8b2d7a0c-a9cb-41c7-8b2f-9d3efa669973" />
 
-### Screenshot 2 — Metadata tracking
-Output of `engine ps` showing container IDs, host PIDs, and states.
+### Screenshot 2 - Scheduler Experiment 1 — CPU priority comparison
 <img width="1920" height="1003" alt="2nd_pic" src="https://github.com/user-attachments/assets/70cddec8-6343-4b65-88ce-4e814a5b15e0" />
 
 ### Screenshot 3 — Bounded-buffer logging
