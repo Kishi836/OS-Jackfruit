@@ -5,6 +5,7 @@
 | Name | SRN |
 |---|---|
 | Kshitij G Shettigar | PES1UG24CS240 |
+| Krishna Jha         | PES1UG24CS236 |
 
 ---
 
