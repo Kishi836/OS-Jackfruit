@@ -142,6 +142,9 @@ Log output from two containers running with different nice values (-5 vs 10), sh
 All containers stopped, no stray processes in `ps aux`, kernel module unloaded cleanly with `Module unloaded.` in dmesg.
 <img width="918" height="513" alt="Final_terminal2_teardown_ss" src="https://github.com/user-attachments/assets/fc311bcb-4cc8-4d0d-9950-1b5120af7834" />
 
+### Screenshot 8 — Proving Alpha Container uses more CPU and takes more time than Beta Container
+<img width="740" height="150" alt="Screenshot from 2026-04-24 10-52-09" src="https://github.com/user-attachments/assets/dbe05584-f8a9-4488-b8fa-3ef1303ccb41" />
+
 ---
 
 ## 4. Engineering Analysis
